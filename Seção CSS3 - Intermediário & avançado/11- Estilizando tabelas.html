@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Estilizando tabelas </title>
+		<style>
+			table{
+				width: 600px;
+				border-collapse: separate; /* collapse: ; >>>> Cola as bordas da tabela , o padrão e a propriedade separate*/
+
+			}
+			
+			td ,th{
+				
+				border-collapse: ;
+				padding: 7px;
+			}
+			th {
+				text-transform: uppercase ; /*Essa propriedade deixa todos os textos em letras maiusculas*/
+				border-top: 1px solid #999;
+				border-bottom: 1px solid #111;
+				text-align: left;
+				font-size: 90%;
+				letter-spacing: 0.1em; /* Essa propriedade altera o espaçamento das letras. */
+			}
+
+			tr:hover{
+				background-color: #c3e6e5;
+			}
+			.preco{
+				text-align: right;
+				font-weight: bold;
+			}
+			.alternarFundo{
+				background-color:#efefef;
+			}
+		</style>	
+	</head>	
+	<body>
+		<h1> Estilizando tabelas </h1>
+		<table> 
+			<tr >
+				<th>Código</th>
+				<th>Produto </th>
+				<th style="text-align: right;">Preço </th>
+			</tr>
+
+			<tr class="alternarFundo"> 
+				<td>001 </td>
+				<td>Notebook </td>
+				<td class="preco">R$ 2500,00 </td>
+			</tr>
+
+			<tr> 
+				<td>002 </td>
+				<td>Tablet </td>
+				<td class="preco"> R$ 1500,00</td>
+			</tr>
+
+			<tr class="alternarFundo"> 
+				<td>003 </td>
+				<td>Iphone </td>
+				<td class="preco">R$ 3500,00 </td>
+			</tr>
+
+			<tr> 
+				<td>004 </td>
+				<td>Nexus </td>
+				<td class="preco">R$ 3500,00 </td>
+			</tr>	
+		</table>	
+	</body>
+	
+</html>		

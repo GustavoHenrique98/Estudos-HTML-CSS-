@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FlexBox Container</title>
+	<style>
+		#caixa{
+			background:#dcdcdc;
+			
+			height: 400px;
+			display: flex;
+			flex-direction:row;
+			/*Direção flexível*/
+			/*Flexbox - Propriedade.
+			  Flex-direction:Define as direções de alinhamento dos elementos apenas setando na div pai sem precisar alterar elemento por elemento. 
+
+			  Valores :
+			  row: 
+			  	Direção padrão do display:flex;
+			  	coloca os elementos um ao lado do outro.
+
+			  row-reverse:
+			  	Faz a mesma coisa que o row só que joga todos os elementos para o lado oposto da tela um ao lado do outro(da esquerda para direita) invertendo a ordem dos elementos.
+
+			  Column:
+			  	Agrupa todos os flex itens em coluna(um abaixo do outro)
+			  Column-reverse:		 
+				Faz a mesma coisa que o column a diferença é que ele inverte a ordem dos elementos .
+
+		*/
+
+			
+			flex-wrap:nowrap;
+			/*Flex-wrap :Nada mais é do que definir uma quebra flexível dos layouts.
+
+			Valores:
+
+			nowrap:Força os flex-itens (elementos dentro da div pai com flex box) a se encaixarem na largura do container
+
+			wrap:Faz com que os elementos quando não couberem dentro do container ficarem um abaixo do outro
+			
+			wrap-reverse:
+				Faz a mesma coisa que o wrap só que inverte a ordem dos elementos e joga todos os flex-itens para baixo.
+			*/
+
+
+			justify-content: space-around;
+			/*Justify-content - valores:
+			space-between:
+			space-around:
+			space-evenly:
+			center:
+			
+			*/	
+
+			align-items: center;
+			/*
+				Valores: 
+				Stretch|center|flex-start|flex-end|baseline
+			*/
+
+
+		}	
+
+
+		.item{
+			background:white;
+			border:1px solid gray;
+			margin: 10px;
+		}
+
+		
+	</style>	
+</head>
+<body>
+	<div id="caixa">
+		<div class="item">Conteudo 1</div>
+		<div class="item">Conteudo 2</div>
+		<div class="item">Conteudo 3</div>
+		<div class="item">Conteudo 4</div>
+		<div class="item">Conteudo 5</div>		
+	</div>	
+</body>
+</html>

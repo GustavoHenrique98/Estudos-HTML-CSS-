@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Box-shadow & text-shadow</title>
+	<style>
+		#caixa1{
+			width: 300px;
+			height: 300px;
+			padding: 8px;
+			margin: 20px;
+			background: #444;
+			box-shadow: 20px 20px 2px 10px rgba(0,0,0,0.6);
+			/*O box shadow é uma propriedade que define uma sombra e possui 5 valores
+
+			1-horizontal
+			2-vertical
+			3-blur
+			4-tamanho da sombra
+			5-rgba e a opacidade do rgba influencia no efeito blur (0,0,0,0.6)
+
+			*/
+		}
+		#caixa1 p , #caixa1 h1{
+			text-shadow: 10px 10px 2px rgba(0,0,0,0.6);
+			color: white;
+
+			/*
+				O text-shadow é uma propriedade que coloca sombreamento no texto
+				os 4 valores da propriedade são horizontal,vertical,blur com rgba.
+			*/
+	</style>	
+</head>
+<body>
+	<div id="caixa1">
+		<h1> Caixa1</h1>
+		<p>
+			lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna 
+		</p>
+	</div>	
+</body>
+</html>

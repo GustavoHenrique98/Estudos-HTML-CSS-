@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>	
+		<meta charset="utf-8">
+		<title>Criando barra de navegação horizontal </title>
+		<style>
+			ul{
+				background:dodgerblue ;
+				float: left;
+				width:650px;
+				border: 1px solid black;
+				background:url(recursos/fundo-horizontal.png) repeat-x;
+				
+			}
+			li{
+				float:left;	
+				list-style-type:none;
+				
+			}
+			a{
+				text-decoration:none;
+				color: white;
+				line-height:2em;
+				padding: 0 2em;
+				display: block;
+				background: url(recursos/divisor.png) repeat-y;
+			}
+			a:hover{
+				color:#085662;
+				background: #44cade;
+			}
+			body#home .marcador a{
+				color:white;
+				background: blue;	
+			} 
+			#remover-bg a{
+				background-image:none;
+			}
+		</style>	
+	</head>
+		
+	<body id="home">
+		<h1> Home</h1>
+		<ul>
+			<li id="remover-bg" class="marcador"> <a href=""> Home </a> </li>
+			<li> <a href=""> Sobre </a> </li>
+			<li> <a href=""> Serviços </a> </li>
+			<li> <a href=""> Notícias </a> </li>
+			<li> <a href=""> Contato</a> </li>
+		</ul>
+
+	</body>
+</html>

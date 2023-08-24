@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+	<head> 
+		<meta charset="utf-8">
+		<title>Cor & Imagem de fundo </title>
+		<style>
+				/*
+				background-color: blue; /*Cor do fundo do site*/
+				 
+
+				/*Da mesma forma que utilizamos font para definar vários valores pode fazer a mesma coisa com background*/
+				/*Agora vamos utilizar o background-image para declarar que o nosso documento html irá usar uma imagem de fundo*/
+
+				body{
+					/*background-image:url('imagens/yoshi.png'); /*Determina que o fundo tem uma imagem	*/ 
+					background-repeat: no-repeat; /* O background repeat serve para manipular  a imagem podendo fazer ela repetir apenas na horizontal ou apenas na vertifical ou então definir que a imagem não se repita e possui 3 valores para essa propriedade repeat-x , repeat y , no-repeat */
+
+					background-attachment: fixed;	
+					/*Background-attachment serve para manipular a maneira como o fundo da imagem irá se comportar.
+					valores: fixed,scroll >>> FIXED A IMAGEM FICA FIXA E ROLA JUNTO, SCROLL ELA FICA NA SUA POSIÇÃO ATUAL*/ 
+					background-position: center ;
+					/*O background-position por sí só ja se define , é uma propriedade que permite o desenvolvedor manipular a posição do fundo  e possui valores como : center,top,right,left,bottom podendo combinar essas posições do fundo */
+				}
+				.fundo{
+					background:blue url('imagens/yoshi.png') no-repeat fixed center;
+				}
+			
+		 </style>
+	</head>
+
+	<body class="fundo">
+	
+		<h1>  Conteúdo de título 1</h1>	
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+	</p>	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+	</body>
+
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animações</title>
+	<style>
+		@keyframes animacao{
+			from{ /*Estado inicial*/
+				background: blue;
+				border-radius: 0px;
+				top: 0;
+				left: 0;
+			}
+
+			to{/*Estado final*/
+				background: red;
+				border-radius: 300px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);				
+			}
+		}
+		#caixa{
+			width: 300px;
+			height: 300px;
+			padding:8px;
+			background:blue;
+			position: absolute;
+			/*animation-name:animacao; /*Nome da animação*/
+			/*animation-duration:5s ;/*Duração da animação*/
+			/*animation-delay:2s; /*Tempo de espera da animação*/
+			/*animation-iteration-count:2;/*Quantas vezes a animação irá executar*/
+			/*animation-direction: alternate; /*Alterna entre a posição inicial e a posição final este atributo é sobre a direção da animação*/
+
+			animation: animacao 5s/*duração*/ /*delay*/  infinite;/*count*/ ; /*Aqui temos a forma simplificada de aplicar todos esses valores */
+		}
+	</style>
+</head>
+<body>
+	<diV id="caixa">
+
+	</diV>
+</body>
+
+</html>

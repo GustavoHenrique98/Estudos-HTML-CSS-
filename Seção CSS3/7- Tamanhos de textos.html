@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tamanhos de texto</title>
+	<style> 
+
+		.texto{
+			font-size : 16px
+
+		}
+
+		#exemplo{
+			font-size:16px;
+		}
+		#exemplo span{
+			font-size: 1em;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Unidades de medida :
+	Px: Tamanho fixo.
+	em: Tamanho relativo ao container pai.
+	%: Tamanho relativo-->
+
+	<p class="texto">
+		Conteudo1
+	</p>
+
+
+	<!-- Aqui vamoos exemplificar o uso do em que é uma unidade de medida relativa ao conteudo pai. (ou container pai)-->
+
+	<div id="exemplo"> 
+
+		<span> SPAN DENTRO DA DIV KKKKKK</span>
+
+	</div>	
+
+	<!-- Podemos reparar que o em ele é relativo ao container pai, o span foi formato com o font-size :1em   sendo que o container pai
+	(div id="exemplo") possuia 16px -->
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Tabelas</title>
+	<meta charset = "utf-8">
+</head>
+	
+<body>
+	<h1> <strong>
+		Tabelas ocupando 50% do espaço da tela. </strong> </h1>
+	<table border = "2" width="50%" height ="">
+		<tr >
+			<th>Código</th>
+			<th>Produto</th>
+			<th>Preço Do produto</th>
+		 </tr>
+
+		<tr>
+			<td>001</td>
+			<td>Notebook</td>
+			<td>R$ 2.500,99</td>
+		</tr>
+
+		<tr>
+			<td>002</td>
+			<td>tablet</td>
+			<td>R$ 999,99</td>
+		</tr>
+
+		<tr>
+			<!- O comando colspan permite agrupar duas colunas , portanto colspan significa extensão da coluna , nas aspas definimos quantas colunas o cupom 1 vai ocupar. no caso irá ocupar 2 colunas.->
+
+			<!- O comando rowspan define a quantidade de linhas que o dado desconto irá ocupar  que no caso será 2 ->	
+			<td rowspan="2">Desconto </td>
+			<td colspan="2">Cupom1 - R$ 10</td>
+
+		</tr>	
+
+		<tr>
+			<td colspan = "2"> Cupom 2 - R$ 12 </td>
+		</tr>
+
+		<tr>
+			<td> Total :</td>
+			<td colspan = "2"> R$ 3478,98 </td>
+		</tr>	
+
+	</table>		
+	
+	<img src="imagens/tablet.jpg" width="50%">
+</body>	
+
+
+</html>

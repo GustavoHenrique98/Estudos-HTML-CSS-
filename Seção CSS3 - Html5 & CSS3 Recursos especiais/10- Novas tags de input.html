@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Novas tags de input</title>
+	<style>
+
+
+
+
+	 </style>
+</head>
+<body>
+	<!--atributos 
+	 required : Obriga o usuário a preencher determinado formulário senão ele não consegue enviar os dados do formulário.
+	 
+	 autofocus : Designa uma seleção automática no elemento que este atributo é aplicado.
+	
+	 min: Determina um valor mínimo para o input number e range.
+	 
+	 max: Determina um valor máximo para o input number e range.
+	 
+	 step:	determina de quanto em quanto vai ser somado o número conforme o usuário acrescena (tipo number)
+
+	 
+	--> 
+	<!--Novos inputs e atributos html5 -->
+	<form>
+	    <div>
+			<label for="nome"> Nome:</label>
+			<input type="text" name="nome" id="nome" required autofocus>
+		</div>
+		
+
+		<div>
+			<label for="email"> Email:</label>
+			<input type="email" name="email" id="email" required>
+		</div>
+		
+
+		<div>
+			<label for="number">Número</label>
+			<input type="number" name="number" id="number" min="1" max="10" step=2>
+		</div>
+		
+
+		<div>
+			<label for="link"> URL:</label>
+			<input type="url" name="url" id="link" placeholder="ex: hhtps:/seulink.com.br">
+		</div>
+
+		<div>
+			<label for="pesquisa"> Pesquisa:</label>
+			<input type="search" name="pesquisa" id="pesquisa">
+		</div>
+
+		
+		<div>
+			<label for="range"> Range:</label>
+			<input type="range" name="range" id="range" min="1" max="20" value="0" step="5">
+		</div>
+
+		<div>
+			<label for="">Data: </label>
+			<input type="date" name="data" id="data"> 
+
+		</div>	
+
+		<div>
+			<label for="cor"> Cor: </label>
+			<input type="color" name="cor" id="cor"> 
+
+		</div>	
+
+		
+		<div>
+			<label for=""> </label>	
+			<input type="submit" name="enviar" value="enviar">
+		</div>
+
+		
+			
+	</form>	
+</body>
+</html>

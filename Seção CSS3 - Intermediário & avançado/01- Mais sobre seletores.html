@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title> </title>
+		<style>
+			/* Seletor universal(reset):  É representado pelo caractere * <---- atingindo a todos os elementos
+			do documento html, é muito usado para formatar todas as tags de um documento.  */
+			 /**{
+				font-family : "Trebuchet MS" , times,sans-serif;
+				border:1px solid red;
+			} */
+
+			/*Seletor de filho*/
+			li>a{
+				text-decoration:none;
+				color: red;
+			}
+
+			/* Seletor de descendente  */
+			p a {
+				color: green;
+			}
+
+			/* Seletor de irmão adjascente */
+			h2 + p{
+				color: darkblue;
+			}
+			/*Seletor de irmão geral*/
+			h3 ~ p{
+				color: pink;
+			}
+
+
+
+
+		 </style>
+	</head>
+	<body>
+		<!-- Seletor de filho-->
+		<ul>
+			<li> <a href="">vou ser alterado pois, sou filho direto de li</a> </li>
+
+			<li> <span> <a href=""> Eu não serei alterado , pois sou filho de SPAN , portanto n sou filho direto de LI </a> </span> 
+			</li>
+			
+		</ul>
+		<!--Seletor de filho fim -->
+
+		<!-- Seletor de descendente -->
+
+
+		<div>
+			<p> 
+				<span> <a href=""> Mesmo sendo filho de SPAN por ter usado um seletor de descendente em mim serei formato , pois sou descendente da tag P <a/></span>
+			</p>
+		</div>	
+
+		<!-- Seletor de irmão adjascente -->
+
+		<div>
+			<h2>Irmão adjascente h2</h2>
+			<p> Sou o irmão posterior de h2 por isso fui modificado</p>
+			<p> Sou o irmão bastardo por tanto n serei modificado </p>
+		</div>
+
+		<!-- Seletor de irmão adjascente fim -->
+
+		<!-- Seletor de irmão geral -->
+		
+		<div id="corno" > <!--Eu sempre sou o ultimo a saber...--> 
+			<h3> Irmão principal </h3>	
+			<p>E eu achando que era especial...  mainha é kenga?</p>
+			<p> É mesmo meteu gaia que so o carai , sou filho dela também!</p>
+			 
+			 <span> Pouca vergonha... <p>
+			 é mesmo!  safadeza dessa moça ai! </p> </span>
+
+			<p> Irmão? Eu tenho irmãos? NEM FODENDO , sou filho dela também!</p>
+			<p> Putaria do carai....</p>
+
+			<!-- <body> : Foi mal cleitinho é que eu tenho mto fogo!!! 	
+				Div: Vou te botar na justiça , ta errado isso ai , só pq tem prikito?-->
+
+
+		</div>
+
+
+
+
+		</div>
+	</body>	
+</html>

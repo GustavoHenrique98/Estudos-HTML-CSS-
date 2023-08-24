@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Estilizando formulários parte 2</title>
+	<style>	
+		body{
+			background:#643d87 url(recursos/fundo.jpg) no-repeat top center;
+
+		}
+		
+		#container{
+			width: 400px;
+			height: 300px;
+			background-color: rgba(255,255,255,0.3);
+			margin:0 auto;
+			margin-top: 120px;
+			border-radius: 10px;
+			text-align: center;
+		}
+		#container img{
+			width:120px;
+			height: 120px;
+			margin-top:-60px;
+			margin-bottom: 30px;
+		}
+		input{
+			border-radius: 5px;
+			border:none;
+			padding: 10px;
+		}
+		input[type="text"] ,[type="password"]{
+			margin-bottom: 10px;
+			width: 80%;
+			font-size: 18px;
+			background-color:#fff;
+			padding-left: 40px;
+		}
+		input[type="text"]{
+			background-image:url(recursos/icone-cadeado.png);
+			background-repeat: no-repeat;
+			background-position:10px;
+		}
+		input[type="password"]{
+			background-image:url(recursos/icone-cadeado.png);
+			background-repeat: no-repeat;
+			background-position:10px;
+		}
+		input[type="submit"]{
+			margin-bottom: 10px;
+			width: 80%;
+			font-size: 18px;
+			background-color:#f79300;
+			color: #fff;
+			border: 2px solid #db7d00;
+			width: 90%;
+		}
+		input[type="submit"]:hover{
+			background: orange;
+			cursor: pointer;
+		}	
+
+	</style>	
+</head>
+<body>
+	<div id="container">	
+		<img src="recursos/perfil.png">
+		<form>
+		  <div>
+			<label for="email"> </label>
+			<input type="text" name="usuario" id="email" placeholder="Digite seu email">
+		  </div>		
+		
+		  <div>		
+			<label for="senha"> </label>
+			<input type="password" name="senha" id="senha" placeholder="Digite sua senha ">
+		  </div>
+
+			<input type="submit" value="Logar">
+		</form>	
+	</div>
+
+</body>
+</html>

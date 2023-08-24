@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: borrder-box;
+}
+
+#box{
+	width: 300px;
+	height: 300px;
+	border:1px solid red;
+	background-color: blue;
+	position: relative;
+	
+}
+
+@keyframes animacao{
+	from{
+		background:blue;
+	}
+	to{
+		background:red;
+		border-radius: 150px;
+	}
+}
+
+#box:hover{
+	cursor: pointer;
+	animation-name: animacao;
+	animation-duration:3s;
+
+
+}
+
+h1{
+	color: rgba(255,255,255,0.3);
+}
+
+

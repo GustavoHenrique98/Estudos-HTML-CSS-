@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Border radius & Border box </title>
+
+		<style>
+			#caixa1{
+				width: 320px;
+				padding: 60px;
+				height: 320px;
+				background: #b9c941;
+				box-sizing: border-box;
+				margin: 10px;
+				
+				/*-moz-border-radius:600px 30px 600px 30px;
+				-webkit-border-radius: 600px 30px 600px 30px;/*
+				; */
+				
+				/*prefixos como webkit e -moz- servem para fazer o navegador com o webkit identificado carregar as alterações atualizadas por falta de suporte que talvez este browser n tenha.*/
+
+				/*A propriedade box-sizig border-box serve para impedir que o espaçamento interno (padding) de determinado elemento , altere sua largura e altura dando mais liberdade para o desenvolvedor manipular determinado elemento dentro de uma div pai sem alterar suas medidas, ajudando o desenvolvedor a calcular mais precisamente o tamanho de uma caixa(elemento container) sem sofrer alterações por conta do padding.*/
+
+
+		
+			}
+			#caixa1 h1 , #caixa1 p{
+				
+			}
+			#caixa2{
+				width: 300px;
+				height: 300px;
+				background: #b9c941;
+				box-sizing: border-box;
+			}
+			img{
+				width: 300px;
+				height: 150px;
+				border-radius: 150px;
+			}
+
+		</style>	
+
+	</head>
+	<body>
+		<diV id="caixa1">	
+			<h1>Título da caixa</h1>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		
+		</diV>
+		<img src="recursos/perfil.jpg">
+
+		<diV id="caixa2">	
+			<h1>Título da caixa</h1>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		
+		</diV>	
+	</body>
+	
+
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Estilizando formulários parte 1</title>
+	<style>
+		body{
+			font-family:"Trebuchet MS",Helvetica,sans-serif;
+		}
+		fieldset{
+			margin: 1em 0;
+			padding: 1em;
+			border: 1px solid #ccc;
+			background: #f8f8f8;
+		}
+		legend{
+			font-weight: bold;
+		}
+
+		label{
+			line-height: 30px;
+			cursor:pointer;
+			display: block;
+		}
+		input[type="text"]{
+			width: 300px;
+		}
+		 /*Seletor de atributo , ele seleciona um atributo específico como por exemplo o input específico "radio"*/
+		input[type="radio"]{
+			margin-right: 1em;
+		}
+		textarea{
+			width: 20em;
+			height: 10em;
+		}
+
+	</style>	
+</head>
+<body>
+	<h1>Estilizando formulários </h2>
+	<form>
+		<fieldset>
+			<legend> Detalhes do contato</legend>
+			
+			<div>	
+				<label for="nome">Nome:</label>
+				<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+			</div>	
+
+			<div>	
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email" placeholder="Digite seu email">
+			</div>
+			
+			<div>	
+				<label for="url">URL:</label>
+				<input type="text" name="url" id="url" placeholder="Cole seu link">
+			</div>
+
+		</fieldset>	
+
+
+		<fieldset>
+			<legend>Comentários </legend>
+			<div>
+				<label for=""> </label>
+				<input type="" name="" id="">
+			</div>		
+
+			<div>
+				<label for=""> </label>
+				<input type="" name="" id="">
+			</div>
+
+			<div>
+				<label for="mensagem">Mensagem:</label> 
+					<textarea name="mensagem" id="mensagem">
+					</textarea>	
+				
+				
+			</div>		
+
+
+		</fieldset>	
+
+		<fieldset> 
+			<legend> Lembrar de mim </legend>
+			<label>
+				<input type="radio" name="opcoes"id="sim">
+				Sim
+			</label>
+
+			<label>
+				<input type="radio" name="opcoes"id="nao">
+				Não
+			</label>	
+
+		</fieldset>	
+	</form>	
+</body>
+</html>

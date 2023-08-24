@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Layout de largura fixa </title>
+		<style>
+			
+			body{
+				font-family: "Trebuchet MS" , "Helvetica" , sans-serif;
+				background:#f2f2f2;
+			}
+
+			#container{
+				width: 720px;
+				margin: 0 auto;
+				background: #fff;
+			}
+			#marca{
+				height: 100px;
+				background:#9e9e9e;
+				text-align:center;
+				line-height: 100px;
+			}
+
+			#conteudo{
+				width: 520px;
+				float:right;
+				border: 1px solid red;
+			}
+			#conteudo-principal{
+				border:1px solid red;
+				width: 320px;
+				float: left;
+			}
+			#conteudo-secundario{
+				border:1px solid red;
+				width: 180px;
+				float: right;
+				background:#d1d1d1;
+			}
+			#conteudo-secundario h1,
+			#conteudo-secundario h2,
+			#conteudo-secundario h3,
+			#conteudo-secundario p{
+				padding-left: 20px;
+				padding-right: 20px;
+			} 
+			#navegacao{
+				width: 180px;
+				float: left;
+				padding-top:20px;
+				padding-bottom: 20px;
+				background:#d1d1d1;
+				border: 1px solid red;
+			}
+			#navegacao ul{
+				list-style-type: none;
+
+			}
+			#navegacao a{
+				text-decoration: none;
+			}
+			#rodape{
+				clear:both;
+				background: #c4c4c4;
+				padding: 5px;
+			}
+			
+		</style>	
+	</head>	
+	<body>
+		<div id="container">
+			<div id="marca">
+				Marca
+			</div>
+			
+			<div id="conteudo">
+				<div id="conteudo-principal"> 
+					<h2>Lorem ipsum dolor sit amet</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							
+					</p>
+				</div>
+
+				<div id="conteudo-secundario">
+					<h2>lorem ipsum dolor sit amet </h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					</p>	
+				</div>	
+
+			</div>
+
+			<div id="navegacao">
+				<ul>
+					<li> <a href=""> Home</a></li>
+					<li> <a href=""> Sobre</a></li>
+					<li> <a href=""> Notícias</a></li>
+					<li> <a href=""> Produtos</a></li>
+					<li> <a href=""> Serviços</a></li>
+					<li> <a href=""> Clientes</a></li>
+					<li> <a href=""> Contato</a></li>
+				</ul>	
+			</div>
+
+			<div id="rodape">
+				rodape
+			</div>
+
+		</div>	
+	</body>	
+</html>	
